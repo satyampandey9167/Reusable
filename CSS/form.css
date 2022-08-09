@@ -1,0 +1,698 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: auto;
+  font-size: 20px;
+  
+  /* background-color: antiquewhite; */
+  	/* background: linear-gradient(45deg, #43c6ac, #191654); */
+/* color: white; */
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background: linear-gradient(45deg, #43c6ac, #191654);
+  
+}
+.tab .tablinks{
+  color:white;
+
+}
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: white;
+  --h: 1.2em;   /* the height */
+  
+  line-height: var(--h);
+  color: #0000;
+  text-shadow: 
+    0 calc(-1*var(--_t,0em)) #000;
+    /* 0 calc(var(--h) - var(--_t,0em)) #1095c1; */
+  overflow: hidden;
+  transition: .3s;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+
+background-color: white;
+color: #000;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 2rem;
+}
+
+/* Style the close button */
+.topright {
+  float: right;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+/* backround */
+
+ /* .container-1,.container-2,.container-3,.container-4{
+
+  background-color: yellow;
+}
+
+.subcontainer1,.subcontainer-2,.subcontainer-3,.subcontainer{
+  background-color: orangered;
+}*/
+
+.info{
+  /* block-size: 25px; */
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}  
+
+
+
+/* end background */
+.topright:hover {
+  color: red;
+}
+
+.container-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+}
+
+.container-2 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 10px;
+}
+
+.container-3 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 10px;
+}
+
+.subcontainer-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  height: fit-content;
+}
+.Address {
+  display: flex;
+  flex-direction: column;
+}
+.Address input {
+  margin-top: 5px;
+}
+input {
+  border: 2px solid black;
+  height: 30px;
+}
+
+.child-1 {
+  display: flex;
+}
+
+.container-2 .subcontainer-1 {
+  display: flex;
+}
+
+.container-3 .subcontainer-3 .child-1 .info {
+  align-items: center;
+}
+
+.container-3 .subcontainer-3 .child-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-3 .subcontainer-3 .child-3 {
+  display: flex;
+}
+.container-3 .subcontainer-3 .child-3 .info {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  width: 10rem;
+}
+/* final arrangements of container 1 */
+
+.container-1 .subcontainer .info,
+.container-1 .subcontainer-1 .info {
+  justify-content: flex-start;
+  
+}
+
+.container-1 .subcontainer .info input,
+.container-1 .subcontainer-1 .info input,
+.container-1 .subcontainer-1 .info select {
+  width: 20rem;
+  margin-left: 1rem;
+  
+}
+
+.container-1 .subcontainer .info .Address textarea{
+  margin-right: 2rem;
+}
+
+/* END OF 1ST CONATINER */
+
+/* START OF 2ND CONTAINER */
+.container-2 .subcontainer .info {
+  justify-content: flex-start;
+}
+.container-2 .subcontainer .info .child-1 {
+  margin-left: 1rem;
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.container-2 .subcontainer-1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-2 .subcontainer-1 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.container-2 .subcontainer-1 .info {
+  margin-right: 10px;
+}
+
+.container-2 .subcontainer-1 .info input {
+  margin-left: 16px;
+}
+
+.container-2 .subcontainer-2 .info {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.child-4 {
+  margin-left: 1rem;
+}
+
+/* END OF CONTAINER 2 */
+
+/* START OF CONTAINER 3 */
+
+.container-3 .subcontainer-3 .child-1 {
+  display: flex;
+  align-items: center;
+}
+
+.container-3 .subcontainer-3 .child-1 .info textarea {
+  margin-left: 1rem;
+  width: 314px;
+  height: 30px;
+}
+
+.container-3 .subcontainer-3 .child-3 .info textarea {
+  margin-left: 1rem;
+  width: 314px;
+  height: 30px;
+}
+
+.container-3 .subcontainer-3 .child-3 {
+  display: flex;
+  justify-content: center;
+}
+.container-3 .subcontainer-3 .child-3 .info {
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+}
+.container-3 .subcontainer-3 .child-3 .info button {
+  padding: 0.5rem;
+  margin-top: 5px;
+}
+
+.container-3 .subcontainer-1 .info {
+  display: flex;
+  justify-content: start;
+}
+
+.container-3 .subcontainer-1 .info div {
+  margin-left: 20px;
+}
+
+form {
+  padding: 2rem;
+  width: 90vw;
+  margin: auto;
+}
+
+.container-3 .subcontainer-2 {
+  padding-bottom: 3rem;
+}
+
+.container-2 .subcontainer-2 .info input {
+  margin-left: 1rem;
+}
+
+.container-4 button {
+  padding: 0.5rem;
+}
+
+/* LC Info */
+
+    .container-5{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      column-gap: 2rem;
+    }
+
+    .container-5 .subcontainer .info{
+      display: flex;
+      justify-content: flex-start;
+      gap: 1rem;
+    }
+
+    .container-5 .subcontainer-1 .info{
+      display: flex;
+      justify-content: flex-start;
+      gap: 1rem;
+    }
+
+   
+
+    .container-6{
+      display: flex;
+      justify-content: flex-start;
+      gap: 1rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+   
+    .container-6 .info label{
+      width: 300px;
+    }
+    
+    .container-6 .info{
+      display: flex;
+      gap: 1rem;
+    }
+
+    .container-7{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      column-gap: 2rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .container-7 .info {
+      display: flex;
+      justify-content: flex-start;
+      gap: 1rem;
+    }
+
+    .container-8{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      column-gap: 2rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .container-8 .info{
+      display: flex;
+      justify-content: flex-start;
+      gap: 1rem;
+    }
+
+    .container-9{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      column-gap: 2rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+
+    .container-9 .subcontainer .info,
+   .container-9 .subcontainer-1 .info {
+      justify-content: flex-start;
+    }
+
+    .container-9 .subcontainer .info input,
+    .container-9 .subcontainer-1 .info input,
+    .container-9 .subcontainer-1 .info select {
+      width: 20rem;
+      margin-left: 1rem;
+    }
+
+    .container-10{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      column-gap: 2rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .container-10 .subcontainer .info,
+   .container-10 .subcontainer-1 .info {
+      justify-content: flex-start;
+    }
+
+  
+
+    .container-10.subcontainer .info input,
+    .container-10 .subcontainer-1 .info input,
+    .container-10 .subcontainer-1 .info select {
+      width: 20rem;
+      margin-left: 1rem;
+    }
+
+    .container-11 button {
+      padding: 0.5rem;
+    }
+
+/* End LC Info */
+
+/* GOOD'S INFO */
+.container-12{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 2rem;
+}
+
+.container-12 .info{
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.container-13{
+  display: flex;
+  justify-content: start;
+  margin-right: 1rem;
+}
+
+.container-13 .info{
+  gap: 1rem;
+}
+.container-13 .info input{
+  width: 250px;
+}
+.container-14{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 2rem;
+}
+
+.container-14 .info{
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.container-15{
+  display: flex;
+  justify-content: start;
+}
+
+.container-15 .info{
+  gap: 1rem;
+}
+
+.container-16{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 2rem;
+}
+
+.container-16 .info{
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.container-17{
+  display: grid;
+  
+}
+
+.container-17 .info{
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.container-18{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 2rem;
+}
+
+.container-18 .info{
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.container-19{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 2rem;
+}
+
+.container-19 .info{
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+
+.container-20{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.container-20 .info{
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.container-21{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 2rem;
+}
+
+.container-21 .info{
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.container-22{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.container-23{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 2rem;
+}
+
+.container-23 .info{
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.container-24{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+}
+
+.container-24 .info{
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.container-25{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 2rem;
+}
+.container-25 .info{
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.container-26{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 2rem;
+}
+
+.container-26 .info{
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.container-277 button {
+  padding: 0.5rem;
+}
+
+/* END OF GOOD'S INFO */
+
+/* Additional Info */
+
+.container-28{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 2rem;
+}
+
+.container-28 .info{
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.container-29{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.container-29 .info{
+  gap: 1rem;
+}
+
+.container-30{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 2rem;
+}
+
+.container-30 .info{
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.container-31{
+  display: flex;
+  flex-direction: column;
+}
+
+.container-31 .info{
+  display: flex;
+  justify-content: flex-start;  
+  gap: 1rem;
+}
+
+.container-32{
+  display: flex;
+  flex-direction: column;
+}
+
+.container-32 .info{
+  display: flex;
+  justify-content: flex-start;  
+  gap: 1rem;
+}
+
+.container-33 button {
+  padding: 0.5rem;
+}
+/* End Of Additional Info  */
+
+/* start of attachments  */
+
+.container-34{
+  display: flex;
+  flex-direction: column;
+  
+}    
+
+.container-34 .info{
+  display: flex;
+  justify-content: flex-start;
+  gap: 3rem;
+}
+
+.container-34 .info label{
+  width: 500px;
+}
+.container-34 .info input{
+  width: 500px;
+  height: 250x;
+}
+.container-35{
+  display: grid;
+  grid-row: auto;
+}
+
+.container-36 button {
+  padding: 0.5rem;
+}
+
+
+/* end of attachments */
+
+ .container-100 { 
+  display: flex;
+  /* flex-direction: row; */
+  /* margin-top: 250px; */
+  justify-content: center;
+  height: 100vh;
+  /* width: 350px; */
+  align-items: center;
+
+}
+
+.container-100 .info {
+  display: flex;
+  justify-content: flex-start;
+  grid-template-columns: repeat(2,1fr); 
+  gap: 2rem;
+  align-items: center;
+} 
+.info .label {
+  align-self: center !important;
+}

@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./CSS/form.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <div class="tab">
+      <button
+        class="tablinks"
+        onclick="openCity(event, 'Applicant Details')"
+        id="defaultOpen"
+      >
+        Applicant Details
+      </button>
+      <button class="tablinks" onclick="openCity(event, 'LC Info')">
+        LC Info
+      </button>
+      <button class="tablinks" onclick="openCity(event, 'Goods Info')">
+        Good's info
+      </button>
+      <button class="tablinks" onclick="openCity(event, '46A')">
+        Document Info 46A
+      </button>
+      <button class="tablinks" onclick="openCity(event, 'Additional Info')">
+        Additional Info
+      </button>
+      <button class="tablinks" onclick="openCity(event, 'Attachments')">
+        Attachments
+      </button>
+    </div>
+    <!-- End Navbar -->
+
+    <!-- Applicant Details -->
+    <div
+      id="Applicant Details"
+      class="tabcontent"
+      style="border: 2px solid #43c6ac"
+    >
+      <form>
+        <div class="container-1">
+          <div class="subcontainer">
+            <div class="info">
+              <label>Applicant (50) : <span style="color:#ff0000">*</span></label>
+              <input type="text" required/>
+            </div>
+            <div class="info">
+              <label>Address : </label>
+
+              <input type="text" />
+              <!-- <input type="text" />
+              <input type="text" /> -->
+            </div>
+            <div class="info">
+              <label>IEC</label>
+              <input type="text" />
+            </div>
+            <div class="info">
+              <label>Country :</label>
+              <input type="text" />
+            </div>
+          </div>
+          <div class="subcontainer-1">
+            <div class="info">
+              <label>Customer Code:</label>
+              <select>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+            </div>
+            <div class="info">
+              <label>City</label>
+              <input type="text" />
+            </div>
+
+            <div class="info">
+              <label>Postal Code</label>
+              <input type="text" />
+            </div>
+
+            <div class="info">
+              <label>State</label>
+              <input type="text" />
+            </div>
+          </div>
+        </div>
+
+        <div class="container-2">
+          <div class="subcontainer">
+            <div class="info">
+              <label>Limit Information <span style="color:#ff0000">*</span></label>
+              <div class="child-1">
+                <input type="text" required/>
+                <input type="text" />
+                <input type="text" />
+                <input type="text" />
+              </div>
+            </div>
+          </div>
+          <div class="subcontainer-1">
+            <div class="info">
+              <label>Applicant's Reference</label>
+              <input type="text" />
+            </div>
+            <div class="info">
+              <label>Deliver Via : <span style="color:#ff0000">*</span></label>
+              <select required>
+                <option selected disabled value="">Choose</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+              </select>
+            </div>
+          </div>
+          <div class="subcontainer-2">
+            <div class="info">
+              <label>Issuing Branch :</label>
+              <!-- <div class="child-4"> -->
+                <select>
+                  <option>Select Your State</option>
+                  <option value="maharastra">maharastra</option>
+                  <option value="odsiha">odsiha</option>
+                </select>
+
+                <select>
+                  <option>Select Your District</option>
+                  <option value="Mumbai">Mumbai</option>
+                  <option value="Thane">Thane</option>
+                </select>
+
+                <select>
+                  <option>Select Your City</option>
+                  <option value="Mumbai-Nariman-Point">
+                    Mumbai Nariman Point
+                  </option>
+                  <option value="2">2</option>
+                </select>
+              <!-- </div> -->
+            </div>
+            <div class="info">
+              <label>Margin % :</label>
+              <input type="text" />
+            </div>
+          </div>
+        </div>
+
+        <div class="container-3">
+          <div class="subcontainer-3">
+            <div class="child-1">
+              <div class="info">
+                <label>Free Account: <span style="color:#ff0000">*</span></label>
+                <textarea type="textbox" required></textarea>
+              </div>
+            </div>
+            <div class="child-2">
+              <div class="info">
+                <a href="#">Check Balance</a>
+              </div>
+            </div>
+            <div class="child-3">
+              <div class="info">
+                <button type="button">Addd</button>
+                <button type="button">Remove</button>
+              </div>
+              <div class="info">
+                <textarea type="textbox"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="subcontainer-1">
+            <div class="info">
+              <label>License</label>
+              <div>
+                <input type="radio" name="button" />
+                <label>OGL</label>
+              </div>
+              <div>
+                <input type="radio" name="button" />
+                <label> NON-OGL</label>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="subcontainer-2">
+            <p><b>
+              Note: The bank has discretion to modify the limit ID, Margin%,
+              Margin Type details provided as part of the request.
+            </b> </p>
+          </div>
+        </div>
+
+        <div class="container-4">
+          <button type="submit">Submit</button>
+          <button type="button">Reset</button>
+          <button type="button">Save Template</button>
+          <button type="button">Load Template</button>
+          <button type="button">Partial Save</button>
+        </div>
+      </form>
+    </div>
+    <!-- End of Applicant Details -->
+
+    <!-- LC Info -->
+    <div id="LC Info" class="tabcontent" style="border: 2px solid #43c6ac">
+      <form>
+        <div class="container-5">
+          <div class="subcontainer">
+            <div class="info">
+              <label>Type(40A)</label>
+              <select>
+                <option>Irrevocable</option>
+                <option>Revocable</option>
+              </select>
+            </div>
+
+            <div class="info">
+              <label>Red Clause : </label>
+              <div>
+                <input type="radio" name="button" />
+                <label>yes</label>
+              </div>
+              <div>
+                <input type="radio" name="button" />
+                <label>No</label>
+              </div>
+            </div>
+
+            <div class="info">
+              <label>Currency : <span style="color:#ff0000">*</span></label>
+              <input type="text" required/>
+            </div>
+            <div class="info">
+              <label>Amount : <span style="color:#ff0000">*</span></label>
+              <input type="number" required />
+            </div>
+          </div>
+
+          <div class="subcontainer-1">
+            <div class="info">
+              <label>Domestic/Foreign :</label>
+              <div>
+                <input type="radio" name="button" />
+                <label>Domestic LC</label>
+              </div>
+              <div>
+                <input type="radio" name="button" />
+                <label>Foreign LC</label>
+              </div>
+            </div>
+            <div class="info">
+              <label>Revolving :</label>
+              <div>
+                <input type="radio" name="button" />
+                <label>Yes</label>
+              </div>
+              <div>
+                <input type="radio" name="button" />
+                <label>No</label>
+              </div>
+            </div>
+
+            <div class="info">
+              <label>Purpose <span style="color:#ff0000">*</span></label>
+              <select required>
+                <option selected disabled value="">Select</option>
+                <option>abc</option>
+                <option>xyz</option>
+              </select>
+            </div>
+
+            <div class="info">
+              <label>Applicable Rules(40E) : <span style="color:#ff0000">*</span></label>
+              <select>
+                <option selected disabled value="">UCP Latest Version</option>
+                <option>asd</option>
+                <option>zxc</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-6">
+          <div class="info">
+            <label>Max Credit Amount(39B)/Tolerance(39A) : <span style="color:#ff0000">*</span></label>
+            <div class="child-1">
+              <select required>
+                <option selected disabled value="">Not Exceeding</option>
+                <option>Exceeding</option>
+                <option>xyz</option></select
+              >+ <input type="text" />- <input type="text" />%
+            </div>
+          </div>
+        </div>
+
+        <div class="container-7">
+          <div class="subcontainer">
+            <div class="info">
+              <label>Additional Amounts(39C) :</label>
+              <textarea type="textbox"></textarea>
+            </div>
+
+            <div class="info">
+              <label>Place of Expiry : <span style="color:#ff0000">*</span></label>
+              <input type="text" required/>
+            </div>
+
+            <div class="info">
+              <label>Credit Available With :<span style="color:#ff0000">*</span></label>
+              <select required>
+                <option selected disabled value="">Select</option>
+                <option>Any Bank</option>
+                <option>asddf</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="subcontainer-1">
+            <div class="info">
+              <label>Request Date(31C) : <span style="color:#ff0000">*</span></label>
+              <input type="date" required/>
+            </div>
+
+            <div class="info">
+              <div class="info">
+                <label>Expiry Date (31D) :<span style="color:#ff0000">*</span></label>
+                <input type="date" required/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="subcontainer-1">
+              <div class="info">
+                  <label>Additional Amounts(39C) :</label>
+                  <textarea type ="textbox"></textarea>
+              </div>
+
+
+              <div class="info">
+                  <label>Request Date(31C) :</label>
+                  <input type="date" />
+              </div>
+
+
+            </div>
+            <div  class="subcontainer-2">
+              <div class="info">
+                <label>Place of Expiry :</label>
+                <input type="text" />
+            </div>
+            <div class="info">
+              <label>Expiry Date (31D) :</label>
+              <input type="date">
+          </div>
+          <div class="info">
+            <label>Credit Available :</label>
+            <input type="date">
+        </div>
+            </div>
+
+          <div class="subconatiner-3">
+            <div class="info">
+              <label>Credit Available :</label>
+              <input type="date">
+          </div>
+          </div>
+        </div> -->
+
+        <div class="container-8">
+          <div class="subcontainer">
+            <div class="info">
+              <label>By : <span style="color:#ff0000">*</span></label>
+              <select required>
+                <option selected disabled value="">Select</option>
+                <option>By Acceptance</option>
+                <option>asddf</option>
+              </select>
+            </div>
+
+            <div class="info">
+              <label>For : </label>
+              <input type="text" />% of invoice value
+              <input type="text" />
+            </div>
+
+            <div class="info">
+              <label>Tenor : <span style="color:#ff0000">*</span></label>
+              <input type="text" required/>
+              <select required>
+                <option selected disabled value="">Select</option>
+                <option>A</option>
+                <option>B</option>
+              </select>
+            </div>
+
+            <div class="info">
+              <label>Advising Bank :</label>
+              <input type="text" />
+            </div>
+          </div>
+
+          <div class="subcontainer-1">
+            <div class="info">
+              <label>Deffered Payments :</label>
+              <textarea type="textbox"></textarea>
+            </div>
+
+            <div class="info">
+              <label>Branch :</label>
+              <input type="text" />
+            </div>
+          </div>
+        </div>
+
+        <div class="container-9">
+          <div class="subcontainer">
+            <div class="info">
+              <label>Address</label>
+              <div class="Address">
+                <input type="text" />
+                <input type="text" />
+                <input type="text" />
+              </div>
+            </div>
+
+            <div class="info">
+              <label>Country : </label>
+              <input type="text" />
+            </div>
+
+            <div class="info">
+              <label>Swift Code :</label>
+              <input type="text" />
+            </div>
+
+            <div class="info">
+              <label>Drawee :</label>
+              <select>
+                <option>A</option>
+                <option>B</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="subcontainer-1">
+            <div class="info">
+              <label>Branch :</label>
+              <input type="text" />
+            </div>
+
+            <div class="info">
+              <label>City :</label>
+              <input type="text" />
+            </div>
+
+            <div class="info">
+              <label>State</label>
+              <input type="text" />
+            </div>
+
+            <div class="info">
+              <label>Postal Code :</label>
+              <input type="text" />
+            </div>
+          </div>
+        </div>
+
+        <div class="container-10">
+          <div class="subcontainer">
+            <div class="info">
+              <label>Beneficary : <span style="color:#ff0000">*</span></label>
+              <input type="text" required/>
+            </div>
+
+            <div class="info">
+              <label>Adress : <span style="color:#ff0000">*</span></label>
+              <div class="Adress">
+                <input type="text" required/>
+                <input type="text" />
+              </div>
+            </div>
+
+            <div class="info">
+              <label>Country :</label>
+              <select>
+                <option>A</option>
+                <option>B</option>
+              </select>
+            </div>
+
+            <div class="info">
+              <label>Drawee :</label>
+              <select>
+                <option>A</option>
+                <option>B</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="subcontainer-1">
+            <div class="info">
+              <label>Confirmation of credits : <span style="color:#ff0000">*</span></label>
+              <select required>
+                <option selected disabled value="">choose</option>
+                <option>A</option>
+                <option>B</option>
+              </select>
+            </div>
+
+            <div class="info">
+              <label>City :</label>
+              <input type="text" />
+            </div>
+
+            <div class="info">
+              <label>State</label>
+              <input type="text" />
+            </div>
+
+            <div class="info">
+              <label>Postal Code :</label>
+              <input type="text" />
+            </div>
+          </div>
+        </div>
+
+        <div class="container-11">
+          <button type="submit">Submit</button>
+          <button type="button">Reset</button>
+          <button type="button">Save Template</button>
+          <button type="button">Load Template</button>
+          <button type="button">Partial Save</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- End of LC Info -->
+
+    <!-- GOODS INFO-->
+    <div id="Goods Info" class="tabcontent" style="border: 2px solid #43c6ac">
+      <form>
+        <div class="container-12">
+          <div class="subcontainer">
+            <div class="info">
+              <label>Partial Shipment Option</label>
+              <select>
+                <option>Prohibited</option>
+                <option>Allowed</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="subcontainer-1">
+            <div class="info">
+              <label>Transhipment Option</label>
+              <select>
+                <option>Prohibited</option>
+                <option>Allowed</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-13">
+          <div class="subcontainer">
+            <div class="info">
+              <label>Place of Receipt :</label>
+              <input type="text" />
+            </div>
+
+            <div class="info">
+              <label>Place of Final Destination :</label>
+              <input type="text" />
+            </div>
+
+            <div class="info">
+              <label>Port of Loading/Airport of Departure : <span style="color:#ff0000">*</span></label>
+              <input type="text" required/>
+            </div>
+
+            <div class="info">
+              <label>Port of Discharge/Airport of Destination : <span style="color:#ff0000">*</span></label>
+              <input type="text" required/>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-14">
+          <div class="subcontainer">
+            <div class="info">
+              <label>Latest Date Of Shipment : <span style="color:#ff0000">*</span></label>
+              <input type="date" required/>
+            </div>
+          </div>
+
+          <div class="subcontainer-1">
+            <div class="info">
+              <label>Expiry Date</label>
+              <input type="text" />
+            </div>
+          </div>
+        </div>
+
+        <div class="container-15">
+          <div class="info">
+            <label>Description of Goods And/Or Services <span style="color:#ff0000">*</span></label>
+            <textarea type="textbox" style="margin-left: auto;" required></textarea>
+          </div>
+        </div>
+
+        <div class="container-16">
+          <div class="subcontainer">
+            <div class="info">
+              <label>PO/Proforma Invoice Number :</label>
+              <input type="text" />
+            </div>
+          </div>
+
+          <div class="subcontainer-1">
+            <div class="info">
+              <label>PO/Proforma Invoice Date :</label>
+              <input type="date" />
+            </div>
+          </div>
+        </div>
+
+        <div class="container-17">
+          <div class="info">
+            <label>Country Of Origin :</label>
+            <select>
+              <option>SELECT</option>
+              <option>A</option>
+              <option>B</option>
+            </select>
+          </div>
+
+          <div class="info">
+            <label>Insurance Cover Details :</label>
+            <input type="text" />
+          </div>
+        </div>
+
+        <div class="container-18">
+          <div class="subcontainer">
+            <div class="info">
+              <label>Policy Number :</label>
+              <input type="text" />
+            </div>
+
+            <div class="info">
+              <label>Merchant Trade LC:</label>
+              <input type="checkbox" />
+            </div>
+          </div>
+
+          <div class="subcontainer-1">
+            <div class="info">
+              <label>Policy Date :</label>
+              <input type="date" />
+            </div>
+          </div>
+        </div>
+
+        <div class="container-19">
+          <div class="subcontainer">
+            <div class="info">
+              <label>Trade Terms <span style="color:#ff0000">*</span></label>
+              <select required>
+                <option selected disabled value="">Select</option>
+                <option>A</option>
+                <option>B</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="subcontainer-1">
+            <div class="info">
+              <label>Place <span style="color:#ff0000">*</span></label>
+              <input type="text" required/>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="container-20">
+          <div class="info">
+            <label>Port Of Discharge/Airport Of Desrination :</label>
+            <input type="text" />
+          </div>
+        </div> -->
+
+        <!-- <div class="container-21">
+          <div class="subcontainer">
+            <div class="info">
+              <label>Latest Date Of Shipment</label>
+              <input type="date" />
+            </div>
+          </div>
+
+          <div class="subcontainer-1">
+            <div class="info">
+              <label>Expiry Date</label>
+              <input type="text" />
+            </div>
+          </div>
+        </div> -->
+
+        <!-- <div class="conatiner-22">
+          <div class="info">
+            <label>Description of Goods And/Or Services : </label>
+            <textarea type="textbox"></textarea>
+          </div>
+        </div> -->
+
+        <!-- <div class="container-23">
+          <div class="subcontainer">
+            <div class="info">
+              <label>PO/Porforma Invoice No</label>
+              <input type="text" />
+            </div>
+          </div>
+
+          <div class="subcontainer-1">
+            <div class="info">
+              <label>PO/Porforma Invoice Date :</label>
+              <input type="date" />
+            </div>
+          </div>
+        </div> -->
+
+        <!-- <div class="container-24">
+          <div class="subcontainer">
+            <div class="info">
+              <label>Country Of Origin :</label>
+              <select>
+                <option>SELECT</option>
+                <option>A</option>
+                <option>B</option>
+              </select>
+            </div>
+
+            <div class="info">
+              <label>Insurance Coverage Details :</label>
+              <input type="text" />
+            </div>
+          </div>
+        </div> -->
+<!-- 
+        <div class="container-25">
+          <div class="subcontainer">
+            <div class="info">
+              <label>Policy Number :</label>
+              <input type="text" />
+            </div>
+
+            <div class="info">
+              <label>Merchant Trade LC:</label>
+              <input type="checkbox" />
+            </div>
+          </div>
+
+          <div class="subcontainer-1">
+            <div class="info">
+              <label>Policy Date :</label>
+              <input type="date" />
+            </div>
+          </div>
+        </div> -->
+
+        <div class="container-26">
+          <!-- <div class="subcontainer">
+            <div class="info">
+              <label>Trade Terms :</label>
+              <select>
+                <option>A</option>
+                <option>B</option>
+              </select>
+            </div>
+
+            <div class="info">
+              <label>Place :</label>
+              <input type="text" />
+            </div>
+          </div> -->
+
+          <div class="subcontainer-1">
+            <div class="info">
+              <label>HS Code :</label>
+              <input type="text" />
+            </div>
+          </div>
+        </div>
+
+        <div class="container-27">
+          <div class="subcontainer-3">
+            <div class="child-1">
+              <div class="info">
+                <label>Presentation Period :</label>
+              </div>
+            </div>
+            <div class="child-2">
+              <div class="info">
+                <label>Documents to be presented within <span style="color:#ff0000">*</span></label>
+                <input type="text" required/>
+              </div>
+            </div>
+            <div class="child-3">
+              <div class="info">
+                <label>Days from the date of <span style="color:#ff0000">*</span> </label>
+                <textarea type="textbox" required></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+<br>
+        <div class="container-277">
+          <button type="submit">Submit</button>
+          <button type="button">Reset</button>
+          <button type="button">Save Template</button>
+          <button type="button">Load Template</button>
+          <button type="button">Partial Save</button>
+        </div>
+      </form>
+    </div>
+    <!-- END OF GOODS INFO -->
+
+    <!-- Document Info 46A -->
+
+    <div id="46A" class="tabcontent" style="border: 2px solid #43c6ac">
+      <div class="container-100">
+        <div class="info">
+          <label>Documents Required (46A) </label>
+          <textarea type="textbox" id="doc" style="width:300px;height: 200px;"></textarea>
+        </div>
+      </div>
+
+      <div class="container-33" style="text-align: center;">
+        <button type="submit">Submit</button>
+        <button type="button">Reset</button>
+        <button type="button">Save Template</button>
+        <button type="button">Load Template</button>
+        <button type="button">Partial Save</button>
+      </div>
+  <br>
+    </div>
+    <br>
+    
+    <!-- End of Documents Info 46A -->
+
+    <!-- Additional Info -->
+
+    <div
+      id="Additional Info"
+      class="tabcontent"
+      style="border: 2px solid #43c6ac"
+    >
+      <form>
+        <div class="container-28">
+          <div class="subcontainer">
+            <div class="info">
+              <label>LC Transfer <span style="color:#ff0000">*</span></label>
+              <select required>
+                <option selected disabled value="">Choose</option>
+                <option>NO</option>
+                <option>YES</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="subcontainer-1">
+            <div class="info">
+              <label>Authorized Bank For Transfer</label>
+              <input type="text" />
+            </div>
+          </div>
+        </div>
+
+        <div class="container-29">
+          <div class="info">
+            <label>Additional Conditions</label>
+            <textarea type="textbox"></textarea>
+          </div>
+        </div>
+
+        <div class="container-30">
+          <div class="subcontainer">
+            <div class="info">
+              <label>Insurance Amount :</label>
+              <input type="text" />
+            </div>
+
+            <div class="info">
+              <label>Advise Through Bank :</label>
+              <input type="text" />
+            </div>
+
+            <div class="info">
+              <label>Address</label>
+              <div class="Address">
+                <input type="text" />
+                <input type="text" />
+                <input type="text" />
+              </div>
+            </div>
+
+            <div class="info">
+              <label>Country</label>
+              <input type="text" />
+            </div>
+          </div>
+
+          <div class="subcontainer-1">
+            <div class="info">
+              <label>Insurance Expiry Date</label>
+              <input type="date" />
+            </div>
+
+            <div class="info">
+              <label>Branch</label>
+              <input type="text" />
+            </div>
+
+            <div class="info">
+              <label>City</label>
+              <input type="text" />
+            </div>
+
+            <div class="info">
+              <label>State</label>
+              <input type="text" />
+            </div>
+
+            <div class="info">
+              <label>Postal Code</label>
+              <input type="text" />
+            </div>
+          </div>
+        </div>
+
+        <div class="container-31">
+          <div class="info">
+            <label>SWIFT Code</label>
+            <input type="text" />
+          </div>
+
+          <div class="info">
+            <label>All Charges Other Than Issuing Bank Charges To(71B) <span style="color:#ff0000">*</span></label>
+            <select required>
+              <option selected disabled value="">Choose</option>
+              <option>A</option>
+              <option>B</option>
+              <option>C</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="container-32">
+          <div class="info">
+            <label>Remarks To Bank</label>
+            <textarea type="textbox"></textarea>
+          </div>
+
+          <div class="info">
+            <label>Request To Issuing Bank</label>
+            <textarea type="textbox"></textarea>
+          </div>
+        </div>
+<br>
+        <div class="container-33">
+          <button type="submit">Submit</button>
+          <button type="button">Reset</button>
+          <button type="button">Save Template</button>
+          <button type="button">Load Template</button>
+          <button type="button">Partial Save</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- End Of Additional Info -->
+
+    <!-- Attachments -->
+
+    <div id="Attachments" class="tabcontent" style="border: 2px solid #43c6ac">
+      <form>
+        <div class="container-34">
+          <div class="info">
+            <label
+              >Purchase Order/Sale Contract/Porforma Invoice Attachments <span style="color:#ff0000">*</span></label
+            >
+            <input type="file" required/>
+          </div>
+
+          <div class="info">
+            <label>Import License Attachments</label>
+            <input type="file" />
+          </div>
+
+          <div class="info">
+            <label>Insurance Cover Attachments</label>
+            <input type="file" />
+          </div>
+
+          <div class="info">
+            <label
+              >Merchanting Trade Declaration And Export Leg Invoice
+              Attachments</label
+            >
+            <input type="file" />
+          </div>
+
+          <div class="info">
+            <label>Project Export Approval Attachments</label>
+            <input type="file" />
+          </div>
+
+          <div class="info">
+            <label>Other Documents Attachments</label>
+            <input type="file" />
+          </div>
+        </div>
+
+        <div class="container-35">
+          <div class="info">
+            <p><b>NOTE : The Maximum Size For Upload Per File Is 32MB.</b></p>
+          </div>
+        </div>
+<br>
+        <div class="container-36">
+          <button type="submit">Submit</button>
+          <button type="button">Reset</button>
+          <button type="button">Save Template</button>
+          <button type="button">Load Template</button>
+          <button type="button">Partial Save</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- End of Attachments -->
+
+    <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+    </script>
+  </body>
+</html>
